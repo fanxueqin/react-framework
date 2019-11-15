@@ -1,0 +1,35 @@
+@headerHeight: 60px;
+@logoWidth: 100px;
+.backHomeLayout{
+    height: 100vh;
+    .header{
+        display: flex;
+        height: @headerHeight;
+        justify-content: flex-start;
+        background: #fff;
+        color: #fff;
+        .logo{
+            width: @logoWidth;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #28ad51;
+            font-size: 20px;
+        }
+        .navSide{
+            display: flex;
+            justify-content:space-between;
+            width: calc(100vw - @logoWidth);
+            margin: 0 20px 0 40px;
+            box-sizing: border-box;
+            
+        }
+    }
+    .container{
+        width: 100%;
+        height: calc(100% - @headerHeight);
+        background: #edeef0;
+        text-align: center;
+        color: #28ad51;
+    }
+}

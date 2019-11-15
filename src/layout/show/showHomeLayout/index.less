@@ -1,0 +1,50 @@
+@headerHeight: 60px;
+@logoWidth: 100px;
+@leftWidth: 240px;
+.showHomeLayout{
+    height: 100vh;
+    .header{
+        display: flex;
+        height: @headerHeight;
+        justify-content: flex-start;
+        background: #fff;
+        color: #fff;
+        border-bottom: 1px solid #eee;
+        .logo{
+            width: @logoWidth;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #00a4ff;
+            font-size: 20px;
+        }
+        .navSide{
+            display: flex;
+            justify-content:space-between;
+            width: calc(100vw - @logoWidth);
+            margin: 0 20px 0 40px;
+            box-sizing: border-box;
+            
+        }
+    }
+    .container{
+        width: 100%;
+        height: calc(100% - @headerHeight);
+        background: #edeef0;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        .leftSide{
+            width: @leftWidth;
+            height: 100%;
+            padding: 20px;
+            text-align: left;
+            border-right: 1px solid #eee;
+            background: #fff;
+        }
+        .rightContainer{
+            width: calc(100% - @leftWidth);
+            height: 100%;
+        }
+    }
+}

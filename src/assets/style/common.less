@@ -1,0 +1,49 @@
+
+@import './variables.less';
+@import './scroll.less';
+body{
+    min-width: 1200px;
+    min-height: 650px;
+    overflow: auto;
+    background: #edeef0!important;
+    font-family: 'microsoft yahei';
+    /* 小屏幕（平板，大于等于 768px） */
+    @media (max-width: @screen-sm-min) {
+      font-size: 10px !important;
+    }
+    @media (min-width: @screen-sm-min) {
+      font-size: 12px !important;
+    }
+    /* 中等屏幕（桌面显示器，大于等于 992px） */
+    @media (min-width: @screen-md-min) {
+      font-size: 12px !important;
+    }
+    /* 大屏幕（大桌面显示器，大于等于 1680px） */
+    @media (min-width: @screen-lg-min) {
+      font-size: 12px !important;
+    }
+    /* 大屏幕（大桌面显示器，大于等于 1920px） */
+    @media (min-width: @screen-lg1-min) {
+      font-size: 13px !important;
+    }
+    @media (min-width: @screen-lg2-min) {
+      font-size: 13px !important;
+    }
+}
+
+.navSelected{
+    color: #08bcd9;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+img{
+  color: transparent!important;
+}
+.showValue{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
