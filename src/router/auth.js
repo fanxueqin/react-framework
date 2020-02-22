@@ -4,8 +4,9 @@ import { Route, Redirect } from 'react-router-dom'
 class AuthorizedRoute extends Component {
     render() {
         const { component: Component, ...rest } = this.props;
-        const isLogin = JSON.parse(window.localStorage.getItem("userInfo")).name?true : false;
-        const userRole = JSON.parse(window.localStorage.getItem("userInfo")).role === 'admin'?true: false;
+        let _info = window.localStorage.getItem("userInfo")? window.localStorage.getItem("userInfo"):'';
+        const isLogin = _info && _info.name?true : false;
+        const userRole = _info && _info.role === 'admin'?true: false;
         return (
             <Route {...rest} render={props => {
                 return isLogin
