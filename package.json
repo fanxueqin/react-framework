@@ -16,7 +16,7 @@
     "mobx": "^4.0.2",
     "mobx-react": "^6.1.4",
     "mockjs": "^1.0.1-beta3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "qs": "^6.8.0",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.4",
